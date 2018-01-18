@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name": "RMP Spire",
+  "description": "Looks up your professors on Rate My Professor for Umass students who use Spire",
+  "version": "1.0",
+
+  "page_action": {
+     "default_icon": "Bold R.png",
+     "default_title": "Rate",
+     "default_popup": "popup.html"
+  },
+
+  "permissions":["activeTab", 
+    "https://www.spire.umass.edu/psp/heproda/EMPLOYEE/HRMS/c/*",
+    "https://www.google.com/*"],
+
+  "content_scripts":[{
+    "run_at": "document_end",
+    "matches": ["https://www.spire.umass.edu/psp/heproda/EMPLOYEE/HRMS/c/*"],
+    "js": ["contentscript.js"], 
+    "all_frames": true
+  }],
+
+  "background": {
+    "scripts": ["background.js"]
+  }
+}
