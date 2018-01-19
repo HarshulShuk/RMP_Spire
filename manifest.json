@@ -1,11 +1,11 @@
 {
   "manifest_version": 2,
-  "name": "RMP Spire",
+  "name": "RMP Spire - Umass Amherst",
   "description": "Looks up your professors on Rate My Professor for Umass students who use Spire",
-  "version": "1.0",
+  "version": "1.2",
 
   "page_action": {
-     "default_icon": "Bold R.png",
+     "default_icon": "icon1.png",
      "default_title": "Rate",
      "default_popup": "popup.html"
   },
